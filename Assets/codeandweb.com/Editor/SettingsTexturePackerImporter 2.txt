@@ -1,0 +1,120 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/Bundles/Cyberpunk_1/Chapter1/Resources/Cyberpunk_Electra.tpsheet
+- Assets/Bundles/Cyberpunk_1/Chapter1/Resources/Cyberpunk_Kid.tpsheet
+- Assets/Bundles/Cyberpunk_1/Chapter1/Resources/Cyberpunk_MainFemale.tpsheet
+- Assets/Bundles/Cyberpunk_1/Chapter1/Resources/Cyberpunk_MainMale.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Mahmud.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_MainFemale.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_MainFemale1.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_MainMale.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_MainMale1.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Onur.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Sahab.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_SahabIfrit.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Salim.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_SalimIfrit.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Zarif.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_ZarifJinn.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Zarima.tpsheet
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_ZarimaJinn.tpsheet
+- Assets/Bundles/Jinny_1/Chapter2/Resources/Jinny_Idris.tpsheet
+- Assets/Bundles/Jinny_1/Chapter2/Resources/Jinny_Salman.tpsheet
+- Assets/Bundles/Jinny_1/Chapter3/Resources/Jinny_Dilara.tpsheet
+- Assets/Bundles/Jinny_1/Chapter3/Resources/Jinny_Gayar.tpsheet
+- Assets/Bundles/Jinny_1/Chapter4/Resources/Jinny_Vah.tpsheet
+- Assets/Bundles/Jinny_1/Chapter5/Resources/Jinny_Fahriya.tpsheet
+- Assets/Bundles/Jinny_1/Chapter9/Resources/Jinny_Armita.tpsheet
+- Assets/Bundles/Ninja_1/Chapter4/Resources/NInja_Vincent.tpsheet
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Farnwell.tpsheet
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Ivan.tpsheet
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Laura.tpsheet
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Lewis.tpsheet
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Main.tpsheet
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Michelle.tpsheet
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Wendy.tpsheet
+- Assets/Bundles/Theater_1/Chapter2/Resources/Theater_Damon.tpsheet
+- Assets/Bundles/Theater_1/Chapter2/Resources/Theater_Goud.tpsheet
+- Assets/Bundles/Theater_1/Chapter2/Resources/Theater_Phil.tpsheet
+- Assets/Bundles/Theater_1/Chapter3/Resources/Theater_Director.tpsheet
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+textureFileNames:
+- Assets/Bundles/Cyberpunk_1/Chapter1/Resources/Cyberpunk_Electra.png
+- Assets/Bundles/Cyberpunk_1/Chapter1/Resources/Cyberpunk_Kid.png
+- Assets/Bundles/Cyberpunk_1/Chapter1/Resources/Cyberpunk_MainFemale.png
+- Assets/Bundles/Cyberpunk_1/Chapter1/Resources/Cyberpunk_MainMale.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Mahmud.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_MainFemale.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_MainFemale1.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_MainMale.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_MainMale1.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Onur.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Sahab.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_SahabIfrit.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Salim.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_SalimIfrit.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Zarif.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_ZarifJinn.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_Zarima.png
+- Assets/Bundles/Jinny_1/Chapter1/Resources/Jinny_ZarimaJinn.png
+- Assets/Bundles/Jinny_1/Chapter2/Resources/Jinny_Idris.png
+- Assets/Bundles/Jinny_1/Chapter2/Resources/Jinny_Salman.png
+- Assets/Bundles/Jinny_1/Chapter3/Resources/Jinny_Dilara.png
+- Assets/Bundles/Jinny_1/Chapter3/Resources/Jinny_Gayar.png
+- Assets/Bundles/Jinny_1/Chapter4/Resources/Jinny_Vah.png
+- Assets/Bundles/Jinny_1/Chapter5/Resources/Jinny_Fahriya.png
+- Assets/Bundles/Jinny_1/Chapter9/Resources/Jinny_Armita.png
+- Assets/Bundles/Ninja_1/Chapter4/Resources/Ninja_Vincent.png
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Farnwell.png
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Ivan.png
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Laura.png
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Lewis.png
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Main.png
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Michelle.png
+- Assets/Bundles/Theater_1/Chapter1/Resources/Theater_Wendy.png
+- Assets/Bundles/Theater_1/Chapter2/Resources/Theater_Damon.png
+- Assets/Bundles/Theater_1/Chapter2/Resources/Theater_Goud.png
+- Assets/Bundles/Theater_1/Chapter2/Resources/Theater_Phil.png
+- Assets/Bundles/Theater_1/Chapter3/Resources/Theater_Director.png
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+enableDebugOutput: 0

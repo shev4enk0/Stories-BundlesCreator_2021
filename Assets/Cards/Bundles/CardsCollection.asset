@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a3c85e795331e4fa29c149bccdec22, type: 3}
+  m_Name: CardsCollection
+  m_EditorClassIdentifier: 
+  CharactersList:
+  - Key: Cards.Scene_Academy_1
+    SpriteTexture: {fileID: 21300000, guid: 9a93117962cc97740a304045f3dad1fe, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: ae995be0309d1d846a5f017359523fb3, type: 3}
+  - Key: Cards.Scene_Dates_Akemi_1
+    SpriteTexture: {fileID: 21300000, guid: 0b7a8e74728302f4f8ce89f4c19c4e47, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 376e0ce5e86671b449f2b2bd39079b7c, type: 3}
+  - Key: Cards.Scene_Dates_Bert_1
+    SpriteTexture: {fileID: 21300000, guid: 9315e7de7793f1745bb0710973a9726e, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 9a8293a72a26e844097a145fbc38f678, type: 3}
+  - Key: Cards.Scene_Dates_Bert_2
+    SpriteTexture: {fileID: 21300000, guid: b0e89127e8b1a1a48bbb161a81b99327, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: b0e8f1c68875fe44fb73cafb1b37e608, type: 3}
+  - Key: Cards.Scene_Dates_Edmont_1
+    SpriteTexture: {fileID: 21300000, guid: 0b8eb9b84f2f1de42bb203d19e335c76, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 5627869606e8b374db6ad021c3699472, type: 3}
+  - Key: Cards.Scene_Dates_Fahriya_1
+    SpriteTexture: {fileID: 21300000, guid: c351c71fc52249742b2f9216dbb6f199, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 9aade9de12183f14da54f8255fdca633, type: 3}
+  - Key: Cards.Scene_Dates_Jackie_1
+    SpriteTexture: {fileID: 21300000, guid: 5c839cd17be775a4098ff043b0f03043, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: ae6b16c4fa4e41944b03b79a3f93c1be, type: 3}
+  - Key: Cards.Scene_Dates_Mateo_1
+    SpriteTexture: {fileID: 21300000, guid: 409f4b04dafd0104a943fd4627f353b3, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 2a8fb2dae785b0447b3a39b8a50bd43a, type: 3}
+  - Key: Cards.Scene_Dates_Nick_1
+    SpriteTexture: {fileID: 21300000, guid: 35454d300edf07d4e9001a5ecf62c961, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 146ae896cb0772f4eb3f58d1a1d3deb5, type: 3}
+  - Key: Cards.Scene_Dates_Rose_1
+    SpriteTexture: {fileID: 21300000, guid: 78b492c0b42d10d40af59921a82e4596, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: bbc16f17d6c38ad459d895a0e65e9c3b, type: 3}
+  - Key: Cards.Scene_Dates_Stella_1
+    SpriteTexture: {fileID: 21300000, guid: 0ae7c33c9d6c0b341ae6fa808f29395a, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 79615111623e4ed4fbe290d13a8ba4a3, type: 3}
+  - Key: Cards.Scene_Dates_Tina_1
+    SpriteTexture: {fileID: 21300000, guid: 4db50b4e4a6894946801fe7ab3b14619, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 92a1d0fa2916c9f46841269db4f2e9d6, type: 3}
+  - Key: Cards.Scene_Epic_1
+    SpriteTexture: {fileID: 21300000, guid: b0efa8f093b36094794d9a02ca1a2874, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 34abe84ed1f2bec44868b76880f32f59, type: 3}
+  - Key: Cards.Scene_Ghosts_1
+    SpriteTexture: {fileID: 21300000, guid: 84fe91426c07b614cb32f7f4a626acaa, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: ea4bc0fe3668c4f478bc1aee204e88d1, type: 3}
+  - Key: Cards.Scene_Ghosts_12
+    SpriteTexture: {fileID: 21300000, guid: 1b551656de2d1c74b99845b1ca65ad48, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: bb07b1c527f5c7344a988709a99b6ada, type: 3}
+  - Key: Cards.Scene_Ghosts_2
+    SpriteTexture: {fileID: 21300000, guid: 3ab6459f30e67074e8a21487272cf610, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: cd6f954a2506de54f868aecf44c94480, type: 3}
+  - Key: Cards.Scene_Ghosts_3
+    SpriteTexture: {fileID: 21300000, guid: ef2e819779c4d1141bdafe809a1185e1, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: e4350e1e058efb0439be50195c0b6134, type: 3}
+  - Key: Cards.Scene_Ghosts_4
+    SpriteTexture: {fileID: 21300000, guid: 0bf6465c54b31a84cbefe9279abe5ff9, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: cef05c015aa6b5349a3a9ccbed60767d, type: 3}
+  - Key: Cards.Scene_Ghosts_5
+    SpriteTexture: {fileID: 21300000, guid: ef50b1305553b724694c2d423872d88e, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 3f6d9ebcd501785478403035536cf4f3, type: 3}
+  - Key: Cards.Scene_Ghosts_8
+    SpriteTexture: {fileID: 21300000, guid: 746c413623980fb4daf09d280ef78bd8, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: b9f43eb55051a1143b2b7cb8ab8fe768, type: 3}
+  - Key: Cards.Scene_Jinny_1
+    SpriteTexture: {fileID: 21300000, guid: 766af0be5ac64da48b2edbac01e22cde, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 5385a099b9af92c4998ed879029319a8, type: 3}
+  - Key: Cards.Scene_SteampunkCensor_1
+    SpriteTexture: {fileID: 21300000, guid: c4ca26145d85d8c4dbf3e99c70d2670b, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: d8da99438e4ef7a4e9bddd911ee768a0, type: 3}
+  - Key: Cards.Scene_SteampunkCensor_2
+    SpriteTexture: {fileID: 21300000, guid: 06cf5f22b0270ad458a48b846f05a43c, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: e63d05fd5fb7d98408e61fc2811c69a8, type: 3}
+  - Key: Cards.Scene_SteampunkCensor_3
+    SpriteTexture: {fileID: 21300000, guid: a5928373ac482234bbfde4e0923495a5, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 50d4a5cf8a11cc446bfc6c9abe6781b7, type: 3}
+  - Key: Cards.Scene_Stuck_Souls_1
+    SpriteTexture: {fileID: 21300000, guid: 73b4d0c64ef26a04d93419310d2383b6, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 7137087f1fe970b408d21891cfebdf21, type: 3}

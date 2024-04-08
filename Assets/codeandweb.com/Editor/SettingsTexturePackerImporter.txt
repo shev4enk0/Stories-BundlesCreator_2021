@@ -1,0 +1,42 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/Bundles/Dates_Akemi/Chapter1/Resources/Dates_MainFemale.tpsheet
+- Assets/Bundles/Dates_Akemi/Chapter1/Resources/Dates_MainMale.tpsheet
+- Assets/Bundles/Dates_Catherine/Chapter1/Resources/Dates_Catherine1.tpsheet
+- Assets/Bundles/Dates_Elena/Chapter1/Resources/Dates_MainMale.tpsheet
+- Assets/Bundles/Dates_Fahriya/Chapter1/Resources/Dates_Fahriya.tpsheet
+- Assets/Bundles/Dates_Ifrit/Chapter1/Resources/Dates_Guard.tpsheet
+- Assets/Bundles/Dates_Jackie/Chapter1/Resources/Dates_Jackie.tpsheet
+- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Main.tpsheet
+- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Mateo.tpsheet
+- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Rose.tpsheet
+- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Steve.tpsheet
+- Assets/Bundles/Dates_Tina/Chapter1/Resources/Dates_Tina.tpsheet
+textureFileNames:
+- Assets/Bundles/Dates_Akemi/Chapter1/Resources/Dates_MainFemale.png
+- Assets/Bundles/Dates_Akemi/Chapter1/Resources/Dates_MainMale.png
+- Assets/Bundles/Dates_Catherine/Chapter1/Resources/Dates_Catherine1.png
+- Assets/Bundles/Dates_Elena/Chapter1/Resources/Dates_MainMale.png
+- Assets/Bundles/Dates_Fahriya/Chapter1/Resources/Dates_Fahriya.png
+- Assets/Bundles/Dates_Ifrit/Chapter1/Resources/Dates_Guard.png
+- Assets/Bundles/Dates_Jackie/Chapter1/Resources/Dates_Jackie.png
+- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Main.png
+- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Mateo.png
+- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Rose.png
+- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Steve.png
+- Assets/Bundles/Dates_Tina/Chapter1/Resources/Dates_Tina.png
+normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+enableDebugOutput: 0
