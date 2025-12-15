@@ -88,85 +88,25 @@ public class AssetBundlesWindow : EditorWindow
                 padding = new RectOffset(5, 5, 2, 2)
             };
 
-            GUILayout.Label(string.Format("BinVersion: <b>{0}</b>", _bookVersionInfo.BinVersion), style);
-            GUILayout.Label(string.Format("BaseResourcesVersion: <b>{0}</b>", _bookVersionInfo.BaseResourcesVersion), style);
-            GUILayout.Label(string.Format("PreviewVersion: <b>{0}</b>", _bookVersionInfo.PreviewVersion), style);
+            GUILayout.Label($"BinVersion: <b>{_bookVersionInfo.BinVersion}</b>", style);
+            GUILayout.Label($"BaseResourcesVersion: <b>{_bookVersionInfo.BaseResourcesVersion}</b>", style);
+            GUILayout.Label($"PreviewVersion: <b>{_bookVersionInfo.PreviewVersion}</b>", style);
             
             ChosenBuildTarget = (BuildTarget) EditorGUILayout.EnumPopup("Build Target", ChosenBuildTarget);
             FoldersForBundles = (Folders) EditorGUILayout.EnumPopup("Folders for Bundle", FoldersForBundles);
-
-            /*if (GUILayout.Button("Set import params"))
-            {
-	            SetImportParams(ChosenBookID);
-	            EditorUtility.DisplayDialog("Параметры проставленны", "Не забудьте сделать реимпорт" , "OK"); 
-            }*/
-
-            /*if (GUILayout.Button("Reimport"))
-            {
-	            Reimport(ChosenBookID);
-	            EditorUtility.DisplayDialog("Reimport", "Reimport" , "OK");
-            }
-
-            if (GUILayout.Button("Build all asset bundles"))
-            {
-	            BuildABForAllFolders(ChosenBookID);
-	            EditorUtility.DisplayDialog("Ура","Ассет-бандлы успешно сгенерированы" , "Ok");
-            }*/
 
             GUILayout.Space(10);
             
             if (GUILayout.Button("Создать Ассет Бандлы"))
             {
-	            /*if (FoldersForBundles == Folders.All)
-	            {
-		            SetImportParams(ChosenBookID);
-		            Reimport(ChosenBookID);
-	            }*/
-
 	            CreateAssetBundles.BuildAB();
 	            _bundlesGenerated = true;
 	            Debug.Log("Готово. Бандл собран");
             }
-
-            /*if (GUILayout.Button("Создать Ассет Бандл"))
-            {
-                SetImportParams(ChosenBookID);
-                Reimport(ChosenBookID);
-                BuildAllAssetBundles(ChosenBookID);            
-            }
-            if (GUILayout.Button("Создать Ассет Бандл iOS + Android"))
-            {
-	            SetImportParams(ChosenBookID);
-	            Reimport(ChosenBookID);
-	            BuildAllAssetBundles(ChosenBookID);            
-            }*/
-            /*if (GUILayout.Button("Full job ALL"))
-            {
-	            foreach (var el in BookIDs)
-	            {
-		            SetImportParams(el);
-		            Reimport(el);
-		            BuildABForAllFolders(el);
-	            }
-            }*/
             if (GUILayout.Button("Generate Cards"))
             {
                 BuildCardsBundle();
             }
-            
-            /*if (GUILayout.Button("Создать Превью Ассет Бандл"))
-            {
-	            SetImportParams(ChosenBookID);
-	            Reimport(ChosenBookID);
-	            BuildABForTheFolderInTheBook(ChosenBookID, "Preview");            
-            }
-            
-            if (GUILayout.Button("Создать BaseResources Бандл"))
-            {
-	            SetImportParams(ChosenBookID);
-	            Reimport(ChosenBookID);
-	            BuildABForTheFolderInTheBook(ChosenBookID, "BaseResources");            
-            }*/
         } 
         else
         {

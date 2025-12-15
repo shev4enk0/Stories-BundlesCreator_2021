@@ -66,78 +66,6 @@ public class CreateAssetBundles
         BuildABForAllFolders(bId, BuildTarget.Android);
         BuildABForAllFolders(bId, BuildTarget.iOS);
     }
-
-    /*public static void BuildAB()
-    {
-        var chosenBuildTarget = AssetBundlesWindow.ChosenBuildTarget;
-
-        var isAllFolders = AssetBundlesWindow.FoldersForBundles == Folders.All;
-      
-        if (AssetBundlesWindow.IsAllBook)
-        {
-            foreach (var el in AssetBundlesWindow.BookIDs)
-            {
-                if (chosenBuildTarget == BuildTarget.NoTarget)
-                {
-                    if (isAllFolders)
-                    {
-                        BuildABForAllFolders(el, BuildTarget.Android);
-                        BuildABForAllFolders(el, BuildTarget.iOS);
-                    }
-                    else
-                    {
-                        BuildFolderAB(el,BuildTarget.Android,AssetBundlesWindow.FoldersForBundles.ToString());
-                        BuildFolderAB(el,BuildTarget.iOS,AssetBundlesWindow.FoldersForBundles.ToString());
-                    }
-                }
-                else
-                {
-                    if (isAllFolders)
-                    {
-                        BuildABForAllFolders(el, chosenBuildTarget);
-                    }
-                    else
-                    {
-                        BuildFolderAB(el,chosenBuildTarget,AssetBundlesWindow.FoldersForBundles.ToString());
-                    }
-                }
-                    
-            }
-        }
-        else
-        {
-            if (chosenBuildTarget == BuildTarget.NoTarget)
-            {
-                if (isAllFolders)
-                {
-                    BuildABForAllFolders(AssetBundlesWindow.ChosenBookID, BuildTarget.Android);
-                    BuildABForAllFolders(AssetBundlesWindow.ChosenBookID, BuildTarget.iOS);
-                }
-                else
-                {
-                    BuildFolderAB(AssetBundlesWindow.ChosenBookID,
-                                  BuildTarget.Android,
-                                  AssetBundlesWindow.FoldersForBundles.ToString());
-                    BuildFolderAB(AssetBundlesWindow.ChosenBookID,
-                                  BuildTarget.iOS,
-                                  AssetBundlesWindow.FoldersForBundles.ToString());
-                }
-            }
-            else
-            {
-                if (isAllFolders)
-                {
-                    BuildABForAllFolders(AssetBundlesWindow.ChosenBookID, chosenBuildTarget);
-                }
-                else
-                {
-                    BuildFolderAB(AssetBundlesWindow.ChosenBookID,
-                                  chosenBuildTarget,
-                                  AssetBundlesWindow.FoldersForBundles.ToString());
-                }
-            }
-        }
-    }*/
     
     public static void BuildAB()
     {
@@ -332,36 +260,35 @@ public class CreateAssetBundles
         _dirs = Directory.GetDirectories(_absolutePath);
     }
 
-
-    public static void BuildCardsAssetBundles(BuildTarget _target){
-
+    public static void BuildCardsAssetBundles(BuildTarget _target)
+    {
         string outpathName = "Cards";
         string _root_asset_path = @"Assets/Cards/Bundles";
 
         string _root_ab_path = "";
-         
-        BuildAssetBundleOptions bundleOptions  = BuildAssetBundleOptions.None;
-        if (_target == BuildTarget.iOS){
-            _root_ab_path = Application.dataPath + AssetbundlesIos + outpathName + "_ios";
+
+        BuildAssetBundleOptions bundleOptions = BuildAssetBundleOptions.None;
+        switch (_target)
+        {
+            case BuildTarget.iOS:
+                _root_ab_path = Application.dataPath + CreateAssetBundles.AssetbundlesIos + outpathName + "_ios";
+                break;
+            case BuildTarget.Android:
+                _root_ab_path = Application.dataPath
+                              + CreateAssetBundles.AssetbundlesAndroid
+                              + outpathName
+                              + "_android";
+                break;
+            case BuildTarget.WebGL:
+                bundleOptions = BuildAssetBundleOptions.ChunkBasedCompression;
+                _root_ab_path = Application.dataPath + CreateAssetBundles.AssetbundlesWebgl + outpathName + "_webgl";
+                break;
         }
-        else if (_target == BuildTarget.Android){
-            _root_ab_path = Application.dataPath + AssetbundlesAndroid + outpathName + "_android";
-            
-        }
-        else if (_target == BuildTarget.WebGL){
-          // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-          //Добавил для WEBGL
-          bundleOptions = BuildAssetBundleOptions.ChunkBasedCompression;
-          _root_ab_path = Application.dataPath + AssetbundlesWebgl + outpathName + "_webgl";
-        }
-      //  if (!Directory.Exists(_root_ab_path))
-      //       Directory.CreateDirectory(_root_ab_path);
-        //Вот это для WebGl добавил
-        // BuildPipeline.BuildAssetBundles(_root_ab_path, bundleOptions, _target);
-        //  BuildPipeline.BuildAssetBundles(_root_asset_path,bundleOptions, _target);
-      
-// The second bundle is all the asset files found recursively in the Meshes directory
-    List<AssetBundleBuild> assetBundleDefinitionList = new();
+
+        // Create the directory if it doesn't exist.
+        if (!Directory.Exists(_root_ab_path)) Directory.CreateDirectory(_root_ab_path);
+
+        List<AssetBundleBuild> assetBundleDefinitionList = new();
         {
             AssetBundleBuild ab = new();
             ab.assetBundleName = "Cards";
@@ -369,34 +296,21 @@ public class CreateAssetBundles
             Debug.Log(ab.assetNames.Count());
             assetBundleDefinitionList.Add(ab);
         }
-//  BuildAssetBundlesParameters buildInput = new()
-//         {
-//             outputPath = outputPath,
-//             options = BuildAssetBundleOptions.AssetBundleStripUnityVersion,
-//             bundleDefinitions = assetBundleDefinitionList.ToArray()
-//         };
-        AssetBundleManifest manifest = BuildPipeline.BuildAssetBundles(_root_ab_path, 
+
+        AssetBundleManifest manifest = BuildPipeline.BuildAssetBundles(_root_ab_path,
                                                                        assetBundleDefinitionList.ToArray(),
-                                                                       bundleOptions, 
+                                                                       bundleOptions,
                                                                        _target);
-        // Look at the results
+
         if (manifest != null)
         {
-            foreach(var bundleName in manifest.GetAllAssetBundles())
+            foreach (var bundleName in manifest.GetAllAssetBundles())
             {
                 string projectRelativePath = _root_ab_path + "/" + bundleName;
                 Debug.Log($"Size of AssetBundle {projectRelativePath} is {new FileInfo(projectRelativePath).Length}");
             }
         }
-        else
-        {
-            Debug.Log("Build failed, see Console and Editor log for details");
-        }
-    
-     
-       
-
-       
+        else { Debug.Log("Build failed, see Console and Editor log for details"); }
     }
 
     static List<string> RecursiveGetAllAssetsInDirectory(string path)
