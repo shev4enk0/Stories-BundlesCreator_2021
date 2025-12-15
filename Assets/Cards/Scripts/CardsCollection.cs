@@ -18,8 +18,12 @@ public class CardsCollection : ScriptableObject
     
     // чтобы обновить CharactersList раскоментировать контекстный метод LoadSpritesIntoCharacterList
     //  при создании бандла Карт для WEB опять закоментировать иначе  бъет ошибку .
-    
-    /*[ContextMenu("LoadData")]
+
+
+    /*
+    #region LoadSpritesIntoCharacterList
+
+    [ContextMenu("LoadData")]
     public void LoadSpritesIntoCharacterList()
     {
         string fullPath = Path.Combine(Application.dataPath, "Cards/Bundles/Sprites");
@@ -68,7 +72,11 @@ public class CardsCollection : ScriptableObject
             if (isPreview) { existingCardData.PreviewTexture = sprite; }
             else { existingCardData.SpriteTexture = sprite; }
         }
-    }*/
+    }
+
+    #endregion
+    */
+    
 }
 
 
