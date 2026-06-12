@@ -3,30 +3,51 @@ importPivots: 1
 tpsheetFileNames:
 - Assets/Bundles/Dates_Akemi/Chapter1/Resources/Dates_MainFemale.tpsheet
 - Assets/Bundles/Dates_Akemi/Chapter1/Resources/Dates_MainMale.tpsheet
-- Assets/Bundles/Dates_Catherine/Chapter1/Resources/Dates_Catherine1.tpsheet
-- Assets/Bundles/Dates_Elena/Chapter1/Resources/Dates_MainMale.tpsheet
-- Assets/Bundles/Dates_Fahriya/Chapter1/Resources/Dates_Fahriya.tpsheet
 - Assets/Bundles/Dates_Ifrit/Chapter1/Resources/Dates_Guard.tpsheet
-- Assets/Bundles/Dates_Jackie/Chapter1/Resources/Dates_Jackie.tpsheet
-- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Main.tpsheet
-- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Mateo.tpsheet
-- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Rose.tpsheet
-- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Steve.tpsheet
-- Assets/Bundles/Dates_Tina/Chapter1/Resources/Dates_Tina.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Danila.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Danila1.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Fedot.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Fedot1.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main1.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main2.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main3.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main4.tpsheet
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main5.tpsheet
+- Assets/Bundles/Dragon/Chapter2/Resources/Dragon_BlackDragon.tpsheet
+- Assets/Bundles/Dragon/Chapter2/Resources/Dragon_BlackDragon1.tpsheet
+- Assets/Bundles/Dragon/Chapter2/Resources/Dragon_Dragon.tpsheet
+- Assets/Bundles/Dragon/Chapter2/Resources/Dragon_Dragon1.tpsheet
+- Assets/Bundles/Dragon/Chapter3/Resources/Dragon_Warlock.tpsheet
+- Assets/Bundles/Dragon/Chapter3/Resources/Dragon_Warlock1.tpsheet
 textureFileNames:
 - Assets/Bundles/Dates_Akemi/Chapter1/Resources/Dates_MainFemale.png
 - Assets/Bundles/Dates_Akemi/Chapter1/Resources/Dates_MainMale.png
-- Assets/Bundles/Dates_Catherine/Chapter1/Resources/Dates_Catherine1.png
-- Assets/Bundles/Dates_Elena/Chapter1/Resources/Dates_MainMale.png
-- Assets/Bundles/Dates_Fahriya/Chapter1/Resources/Dates_Fahriya.png
 - Assets/Bundles/Dates_Ifrit/Chapter1/Resources/Dates_Guard.png
-- Assets/Bundles/Dates_Jackie/Chapter1/Resources/Dates_Jackie.png
-- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Main.png
-- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Mateo.png
-- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Rose.png
-- Assets/Bundles/Dates_Rose_VK/Chapter1/Resources/Dates_Steve.png
-- Assets/Bundles/Dates_Tina/Chapter1/Resources/Dates_Tina.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Danila.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Danila1.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Fedot.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Fedot1.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main1.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main2.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main3.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main4.png
+- Assets/Bundles/Dragon/Chapter1/Resources/Dragon_Main5.png
+- Assets/Bundles/Dragon/Chapter2/Resources/Dragon_BlackDragon.png
+- Assets/Bundles/Dragon/Chapter2/Resources/Dragon_BlackDragon1.png
+- Assets/Bundles/Dragon/Chapter2/Resources/Dragon_Dragon.png
+- Assets/Bundles/Dragon/Chapter2/Resources/Dragon_Dragon1.png
+- Assets/Bundles/Dragon/Chapter3/Resources/Dragon_Warlock.png
+- Assets/Bundles/Dragon/Chapter3/Resources/Dragon_Warlock1.png
 normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 

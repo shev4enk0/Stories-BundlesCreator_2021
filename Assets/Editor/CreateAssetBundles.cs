@@ -142,16 +142,20 @@ public class CreateAssetBundles
 
         CreateRootDirectory();
 
-        BuildPipeline.BuildAssetBundles(_absolutePathToABFolder,
+        var manifestBase = BuildPipeline.BuildAssetBundles(_absolutePathToABFolder,
                                         BuildAssetBundleOptions.ChunkBasedCompression,
                                         _target);
+        if (manifestBase == null)
+            Debug.LogError($"[BundlesCreator] BuildAssetBundles FAILED for {bookID} ({_target}) at {_absolutePathToABFolder}. Check that the {_target} Build Support module is installed.");
         SetAssetBundleNameEmpty();
-       
+
         SetAssetBundleNameAndVariant(false, "Bin","Chapter");
         Directory.CreateDirectory(_binVersionPath);
-        BuildPipeline.BuildAssetBundles(_binVersionPath, 
-                                        BuildAssetBundleOptions.ChunkBasedCompression, 
+        var manifestBin = BuildPipeline.BuildAssetBundles(_binVersionPath,
+                                        BuildAssetBundleOptions.ChunkBasedCompression,
                                         _target);
+        if (manifestBin == null)
+            Debug.LogError($"[BundlesCreator] BuildAssetBundles FAILED for {bookID} Bin/Chapters ({_target}) at {_binVersionPath}.");
 
         SetAssetBundleNameEmpty();
     }
@@ -165,8 +169,12 @@ public class CreateAssetBundles
     {
         foreach (var el in _dirs)
         {
-            var name = el.Replace(_absolutePath + @"\", "");
-            var compare = name[..Math.Min(3, el.Length)];
+            var normalizedEl = el.Replace('\\', '/');
+            var normalizedBase = _absolutePath.Replace('\\', '/').TrimEnd('/');
+            var name = normalizedEl.StartsWith(normalizedBase + "/")
+                ? normalizedEl.Substring(normalizedBase.Length + 1)
+                : normalizedEl;
+            var compare = name[..Math.Min(3, name.Length)];
             var any = folderNames.Any(x=>x.Contains(compare));
             switch (any)
             {
@@ -190,7 +198,11 @@ public class CreateAssetBundles
     {
         foreach (var el in _dirs)
         {
-            var _dir_name = el.Replace(_absolutePath + atSymbol, "");
+            var normalizedEl = el.Replace('\\', '/');
+            var normalizedBase = _absolutePath.Replace('\\', '/').TrimEnd('/');
+            var _dir_name = normalizedEl.StartsWith(normalizedBase + "/")
+                ? normalizedEl.Substring(normalizedBase.Length + 1)
+                : normalizedEl;
 
             AssetImporter.GetAtPath(_rootAssetPath + @"/" + _dir_name)
                          .SetAssetBundleNameAndVariant("", "");

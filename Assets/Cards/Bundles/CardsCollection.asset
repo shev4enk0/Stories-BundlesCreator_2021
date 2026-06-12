@@ -16,6 +16,12 @@ MonoBehaviour:
   - Key: Cards.Scene_Academy_1
     SpriteTexture: {fileID: 21300000, guid: 9a93117962cc97740a304045f3dad1fe, type: 3}
     PreviewTexture: {fileID: 21300000, guid: ae995be0309d1d846a5f017359523fb3, type: 3}
+  - Key: Cards.Scene_Cyberpunk_1
+    SpriteTexture: {fileID: 21300000, guid: b9afecc20d29e724d9cb82c9dee79c13, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: b67dadb984e021e408c519c0c0f5e069, type: 3}
+  - Key: Cards.Scene_Cyberpunk_2
+    SpriteTexture: {fileID: 21300000, guid: c54bbf53ce828294db8a423226260cc8, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 521341f91e5164b4bb077ce412bed3fd, type: 3}
   - Key: Cards.Scene_Dates_Akemi_1
     SpriteTexture: {fileID: 21300000, guid: 0b7a8e74728302f4f8ce89f4c19c4e47, type: 3}
     PreviewTexture: {fileID: 21300000, guid: 376e0ce5e86671b449f2b2bd39079b7c, type: 3}
@@ -76,6 +82,27 @@ MonoBehaviour:
   - Key: Cards.Scene_Jinny_1
     SpriteTexture: {fileID: 21300000, guid: 766af0be5ac64da48b2edbac01e22cde, type: 3}
     PreviewTexture: {fileID: 21300000, guid: 5385a099b9af92c4998ed879029319a8, type: 3}
+  - Key: Cards.Scene_Mistress_1
+    SpriteTexture: {fileID: 21300000, guid: 3401b9ef48d28bd45b36562cdaab6786, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 090482cab572afa4cbdc3e8feaf36a43, type: 3}
+  - Key: Cards.Scene_Mistress_2
+    SpriteTexture: {fileID: 21300000, guid: 1509f66ee063ece4aaabcf2971b5560e, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 12cb982fd7fdb274f820b0cfd4724137, type: 3}
+  - Key: Cards.Scene_Mistress_3
+    SpriteTexture: {fileID: 21300000, guid: fb8e28f12ec3b544abef16f986ce070b, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: f404180b63dc4334da810bf937d2cb02, type: 3}
+  - Key: Cards.Scene_Mistress_4
+    SpriteTexture: {fileID: 21300000, guid: 9be662fdf9f3e174882ed509170345b5, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 7138af9b6dd270b4981d425eb6688cc1, type: 3}
+  - Key: Cards.Scene_Mistress_5
+    SpriteTexture: {fileID: 21300000, guid: a0ea703c91d4c7241a5c0b50e5e059a8, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 2e00a8bfdf8c6c34bbecc238e3e4d2a9, type: 3}
+  - Key: Cards.Scene_Mistress_6
+    SpriteTexture: {fileID: 21300000, guid: 5f00d5346459d4e4aabd15e0441b6a96, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: eb6cabdf2f62b4047b5f48fbc02c79ab, type: 3}
+  - Key: Cards.Scene_Mistress_7
+    SpriteTexture: {fileID: 21300000, guid: a8e085884b5657140aa80b002dfacc79, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 7f79bd492ead89a479718b37af521493, type: 3}
   - Key: Cards.Scene_SteampunkCensor_1
     SpriteTexture: {fileID: 21300000, guid: c4ca26145d85d8c4dbf3e99c70d2670b, type: 3}
     PreviewTexture: {fileID: 21300000, guid: d8da99438e4ef7a4e9bddd911ee768a0, type: 3}
@@ -88,3 +115,12 @@ MonoBehaviour:
   - Key: Cards.Scene_Stuck_Souls_1
     SpriteTexture: {fileID: 21300000, guid: 73b4d0c64ef26a04d93419310d2383b6, type: 3}
     PreviewTexture: {fileID: 21300000, guid: 7137087f1fe970b408d21891cfebdf21, type: 3}
+  - Key: Cards.Scene_Tore_1
+    SpriteTexture: {fileID: 21300000, guid: be376e78ced788647ac8bfe3d48a3a12, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 8e6875c9ed89ab5439dead0625d4bdc6, type: 3}
+  - Key: Cards.Scene_Tore_2
+    SpriteTexture: {fileID: 21300000, guid: 34f83de9029ae5445879c8b123840475, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 7f26daadcdfbb124ba5a99d0678f46f1, type: 3}
+  - Key: Cards.Scene_Tore_3
+    SpriteTexture: {fileID: 21300000, guid: 417425621235b4540847d73b1b75853c, type: 3}
+    PreviewTexture: {fileID: 21300000, guid: 6bd11dabf191aaa4b8dbab3afa49e428, type: 3}
